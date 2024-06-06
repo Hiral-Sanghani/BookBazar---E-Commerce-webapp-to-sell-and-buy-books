@@ -7,9 +7,13 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.ecommerce.bookbazar.repository.UserDataRepository;
+
+import jakarta.transaction.Transactional;
+
 import com.ecommerce.bookbazar.model.User;
 
 @Service
+@Transactional
 public class UserServiceImpl implements UserService {
 
     private UserDataRepository userDataRepository;

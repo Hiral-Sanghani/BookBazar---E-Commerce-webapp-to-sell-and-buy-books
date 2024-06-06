@@ -8,7 +8,7 @@ import jakarta.persistence.PrimaryKeyJoinColumn;
 import lombok.Data;
 
 @Data
-@Entity(name = "user_details")
+@Entity(name = "user")
 public class User {
 
     @Id
