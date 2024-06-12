@@ -4,6 +4,8 @@ import com.ecommerce.bookbazar.model.Enum.BookCondition;
 import com.ecommerce.bookbazar.model.Enum.StockAvailability;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -29,7 +31,12 @@ public class Book {
     private String author;
     private String isbn;
     private String description;
+
+    @Enumerated(EnumType.STRING)
     private BookCondition book_Condition;
+
+    @Enumerated(EnumType.STRING)
     private StockAvailability stock; 
 
+    
 }
