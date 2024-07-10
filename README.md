@@ -1,4 +1,4 @@
-**BookBazar - Old and Buy new buying shop**
+**BookBazar - Old and New buying shop**
 A website application to sell both new and used books.
 
 **Functionalities:** 
