@@ -34,7 +34,7 @@ A website application to sell both new and used books.
   3. Database: H2 DB
   4. Configure your database configuration in **application.properties**:
 
-     ![image](https://github.com/Hiral-Sanghani/BookBazar/assets/46317729/113b1827-a28a-4b8a-a197-9316000de6ab)
+     ![image](https://github.com/Hiral-Sanghani/BookBazar/assets/46317729/69b60fc6-20a4-419f-995b-3e84c0db0796)
 
 **Contribution:**
 Contributors are most welcome.
