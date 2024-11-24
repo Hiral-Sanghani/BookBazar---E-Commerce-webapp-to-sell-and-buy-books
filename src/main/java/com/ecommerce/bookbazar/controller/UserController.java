@@ -23,12 +23,12 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @GetMapping("/get-user")
+    @GetMapping("/fetch-user-details")
     public List<User> getAllUser() {
         return userService.getAllUser();
     }
     
-    @GetMapping("/get-user/{id}")
+    @GetMapping("/fetch-user/{id}")
     public Optional<User> getUser(@PathVariable Long id) {
         return userService.getUser(id);
     }

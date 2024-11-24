@@ -7,9 +7,13 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.ecommerce.bookbazar.repository.UserDataRepository;
+
+import jakarta.transaction.Transactional;
+
 import com.ecommerce.bookbazar.model.User;
 
 @Service
+@Transactional
 public class UserServiceImpl implements UserService {
 
     private UserDataRepository userDataRepository;
@@ -56,8 +60,8 @@ public class UserServiceImpl implements UserService {
         if(user.getEmail() != null && !updatedUser.getEmail().equals(user.getEmail()))
             updatedUser.setEmail(user.getEmail());
         
-        if(user.getMobile_no() != null && updatedUser.getMobile_no().equals(user.getMobile_no()))
-            updatedUser.setMobile_no(user.getMobile_no());
+        if(user.getMobileNo() != null && updatedUser.getMobileNo().equals(user.getMobileNo()))
+            updatedUser.setMobileNo(user.getMobileNo());
         
         userDataRepository.save(updatedUser);
 
